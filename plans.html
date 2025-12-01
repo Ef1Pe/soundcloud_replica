@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plans • SoundCloud Replica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="subpage">
+    <header class="site-header compact">
+        <div class="header-inner">
+            <a class="logo" href="index.html" aria-label="SoundCloud Home"></a>
+            <nav class="primary-nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="charts.html">Charts</a>
+                <a href="creators.html">Creators</a>
+                <a href="plans.html" class="active">Plans</a>
+                <a href="apps.html">Apps</a>
+            </nav>
+            <div class="header-actions">
+                <button class="ghost-btn" type="button">Sign in</button>
+                <button class="primary-btn" type="button">Create account</button>
+            </div>
+            <button class="menu-toggle" aria-label="Open navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero plans">
+            <p class="section-eyebrow">Plans</p>
+            <h1>Choose the plan that amplifies your path.</h1>
+            <p>Flexible options for listeners, rising creators, and full-time artists.</p>
+            <div class="billing-toggle">
+                <label>
+                    <input type="checkbox" id="billingToggle" />
+                    <span class="switch"></span>
+                    <span class="label">Bill annually (save 20%)</span>
+                </label>
+            </div>
+        </section>
+
+        <section class="section pricing">
+            <div class="pricing-card">
+                <p class="section-eyebrow">Listener</p>
+                <h2>SoundCloud Free</h2>
+                <p class="price" data-price-free>$0</p>
+                <ul>
+                    <li>Ad-supported streaming</li>
+                    <li>Create unlimited playlists</li>
+                    <li>Follow artists and labels</li>
+                </ul>
+                <button class="primary-btn">Start listening</button>
+            </div>
+            <div class="pricing-card featured">
+                <p class="section-eyebrow">Creator</p>
+                <h2>Next Pro</h2>
+                <p class="price" data-price-pro>$16 / mo</p>
+                <ul>
+                    <li>Unlimited uploads</li>
+                    <li>Advanced insights</li>
+                    <li>Fan-powered payouts</li>
+                    <li>Distribution to major DSPs</li>
+                </ul>
+                <button class="primary-btn">Upgrade</button>
+            </div>
+            <div class="pricing-card">
+                <p class="section-eyebrow">Teams</p>
+                <h2>SoundCloud for Artists</h2>
+                <p class="price" data-price-teams>$30 / seat</p>
+                <ul>
+                    <li>Shared dashboards</li>
+                    <li>Label-grade analytics</li>
+                    <li>Dedicated support</li>
+                </ul>
+                <button class="primary-btn">Contact sales</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer small">
+        <span>© SoundCloud Replica</span>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Status</a>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>

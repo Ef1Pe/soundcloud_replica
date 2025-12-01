@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charts • SoundCloud Replica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="subpage">
+    <header class="site-header compact">
+        <div class="header-inner">
+            <a class="logo" href="index.html" aria-label="SoundCloud Home"></a>
+            <nav class="primary-nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="charts.html" class="active">Charts</a>
+                <a href="creators.html">Creators</a>
+                <a href="plans.html">Plans</a>
+                <a href="apps.html">Apps</a>
+            </nav>
+            <div class="header-actions">
+                <button class="ghost-btn" type="button">Sign in</button>
+                <button class="primary-btn" type="button">Create account</button>
+            </div>
+            <button class="menu-toggle" aria-label="Open navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="section-eyebrow">Charts</p>
+            <h1>The pulse of the SoundCloud community.</h1>
+            <p>Updated daily with the most-streamed tracks across genres, moods, and regions.</p>
+            <div class="filters">
+                <button class="chip active" data-filter="global">Global</button>
+                <button class="chip" data-filter="us">United States</button>
+                <button class="chip" data-filter="electronic">Electronic</button>
+                <button class="chip" data-filter="hiphop">Hip-Hop</button>
+                <button class="chip" data-filter="indie">Indie</button>
+            </div>
+        </section>
+
+        <section class="section table-section">
+            <header class="section-header">
+                <div>
+                    <p class="section-eyebrow">Top 10 • Today</p>
+                    <h2>Emerging Electronic</h2>
+                </div>
+                <button class="ghost-btn">Download report</button>
+            </header>
+            <div class="charts-table" role="table">
+                <div class="table-row table-head" role="row">
+                    <div role="columnheader">#</div>
+                    <div role="columnheader">Track</div>
+                    <div role="columnheader">Artist</div>
+                    <div role="columnheader">Plays</div>
+                    <div role="columnheader">Trend</div>
+                </div>
+                <div class="table-body" data-chart></div>
+            </div>
+        </section>
+
+        <section class="section dense">
+            <header class="section-header">
+                <div>
+                    <p class="section-eyebrow">Genre snapshots</p>
+                    <h2>What's moving right now</h2>
+                </div>
+            </header>
+            <div class="section-grid injection-target" data-injection-target="section_grid" data-section="charts">
+                <!-- dynamic -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer small">
+        <span>© SoundCloud Replica</span>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Status</a>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>

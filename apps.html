@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apps • SoundCloud Replica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="subpage">
+    <header class="site-header compact">
+        <div class="header-inner">
+            <a class="logo" href="index.html" aria-label="SoundCloud Home"></a>
+            <nav class="primary-nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="charts.html">Charts</a>
+                <a href="creators.html">Creators</a>
+                <a href="plans.html">Plans</a>
+                <a href="apps.html" class="active">Apps</a>
+            </nav>
+            <div class="header-actions">
+                <button class="ghost-btn" type="button">Sign in</button>
+                <button class="primary-btn" type="button">Create account</button>
+            </div>
+            <button class="menu-toggle" aria-label="Open navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero apps">
+            <p class="section-eyebrow">Apps</p>
+            <h1>SoundCloud everywhere you listen.</h1>
+            <p>Stay in sync across desktop, mobile, consoles, and the web.</p>
+        </section>
+
+        <section class="section app-grid">
+            <article class="app-card">
+                <h3>iOS</h3>
+                <p>Follow artists, stream mixes offline, and capture audio on the fly.</p>
+                <button class="secondary-btn">Download</button>
+            </article>
+            <article class="app-card">
+                <h3>Android</h3>
+                <p>Android Auto, casting, and adaptive downloads keep the beats going.</p>
+                <button class="secondary-btn">Download</button>
+            </article>
+            <article class="app-card">
+                <h3>Desktop</h3>
+                <p>High-resolution streaming with keyboard shortcuts and output routing.</p>
+                <button class="secondary-btn">Download</button>
+            </article>
+            <article class="app-card">
+                <h3>Xbox</h3>
+                <p>Soundtrack your gameplay with curated playlists and live DJ sets.</p>
+                <button class="secondary-btn">Install</button>
+            </article>
+            <article class="app-card">
+                <h3>Chromecast</h3>
+                <p>Beam audio to any speaker with multi-device session control.</p>
+                <button class="secondary-btn">Learn more</button>
+            </article>
+            <article class="app-card">
+                <h3>Sonos</h3>
+                <p>Add SoundCloud to your whole-home system with rich search.</p>
+                <button class="secondary-btn">Connect</button>
+            </article>
+        </section>
+
+        <section class="section dense">
+            <header class="section-header">
+                <div>
+                    <p class="section-eyebrow">Developer integrations</p>
+                    <h2>Build with SoundCloud</h2>
+                </div>
+                <a href="https://developers.soundcloud.com" class="ghost-btn">View docs</a>
+            </header>
+            <div class="code-panel">
+                <pre><code>{
+    "client_id": "YOUR_CLIENT_ID",
+    "redirect_uri": "https://your-app.com/callback",
+    "scope": ["non-expiring", "fast-connect"],
+    "description": "Prototype deck player"
+}</code></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer small">
+        <span>© SoundCloud Replica</span>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Status</a>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
