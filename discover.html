@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover • SoundCloud Replica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="subpage">
+    <header class="site-header compact">
+        <div class="header-inner">
+            <a class="logo" href="index.html" aria-label="SoundCloud Home"></a>
+            <nav class="primary-nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="discover.html" class="active">Discover</a>
+                <a href="charts.html">Charts</a>
+                <a href="creators.html">Creators</a>
+                <a href="plans.html">Plans</a>
+                <a href="apps.html">Apps</a>
+            </nav>
+            <div class="header-actions">
+                <button class="ghost-btn" type="button">Sign in</button>
+                <button class="primary-btn" type="button">Create account</button>
+            </div>
+            <button class="menu-toggle" aria-label="Open navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="section-eyebrow">Discover</p>
+            <h1>Fresh drops, hidden gems, and your next obsession.</h1>
+            <p>Streamline your feed with curated sets, AI-powered suggestions, and editorial picks updated every hour.</p>
+            <div class="filters">
+                <button class="chip active" data-filter="for-you">For You</button>
+                <button class="chip" data-filter="trending">Trending</button>
+                <button class="chip" data-filter="emerging">Emerging</button>
+                <button class="chip" data-filter="moods">Moods</button>
+            </div>
+        </section>
+
+        <section class="section">
+            <header class="section-header">
+                <div>
+                    <p class="section-eyebrow">Curated for you</p>
+                    <h2>Playlists we think you'll love</h2>
+                </div>
+                <button class="ghost-btn">Refresh picks</button>
+            </header>
+            <div class="section-grid injection-target" data-injection-target="section_grid" data-section="discover">
+                <!-- Injected cards -->
+            </div>
+        </section>
+
+        <section class="section dense">
+            <header class="section-header">
+                <div>
+                    <p class="section-eyebrow">Spotlight</p>
+                    <h2>Featured creators</h2>
+                </div>
+                <button class="primary-btn">Upload your music</button>
+            </header>
+            <div class="spotlight-grid">
+                <article class="spotlight-card">
+                    <div class="badge">Breakthrough</div>
+                    <h3>Leena Ava</h3>
+                    <p>Analog synth wizard bringing dream pop to the club.</p>
+                    <button class="secondary-btn">Follow</button>
+                </article>
+                <article class="spotlight-card">
+                    <div class="badge">Editors' Pick</div>
+                    <h3>Formant Labs</h3>
+                    <p>Experimental collective pushing hardware live sets.</p>
+                    <button class="secondary-btn">Follow</button>
+                </article>
+                <article class="spotlight-card">
+                    <div class="badge">On Tour</div>
+                    <h3>Neon Ferry</h3>
+                    <p>Indie trio packing sweaty basements and rooftops.</p>
+                    <button class="secondary-btn">Follow</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer small">
+        <span>© SoundCloud Replica</span>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Status</a>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>

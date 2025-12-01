@@ -1,0 +1,47 @@
+site_analysis:
+  name: "SoundCloud"
+  url: "https://soundcloud.com"
+  type: "music-sharing"
+
+  color_palette:
+    primary: "#f50"
+    secondary: "#161616"
+    accent: "#0ecad4"
+    text_primary: "#ffffff"
+    text_secondary: "#cfcfcf"
+    background: "#0d0d0d"
+
+  typography:
+    heading_font: "Inter, 'Helvetica Neue', Arial, sans-serif"
+    heading_sizes:
+      h1: "48px"
+      h2: "32px"
+      h3: "24px"
+    body_font: "Inter, 'Helvetica Neue', Arial, sans-serif"
+    body_size: "16px"
+    ui_font: "Inter, 'Helvetica Neue', Arial, sans-serif"
+
+  layout:
+    max_width: "1280px"
+    header_height: "72px"
+    sidebar_width: "320px"
+    grid_columns: 12
+    grid_gap: "24px"
+
+  key_components:
+    - "Sticky promo banner"
+    - "Split navigation bar with CTA buttons"
+    - "Hero upload module with carousel"
+    - "Search/upload utility bar"
+    - "Trending playlists grid"
+    - "Creator callout cards"
+    - "Floating mini player"
+    - "Dense footer directory"
+  
+  injection_targets:
+    - name: "primary_playlists"
+      selector: ".playlist-grid"
+      description: "Main grid for trending playlists and injected track cards"
+    - name: "secondary_sections"
+      selector: ".section-grid"
+      description: "Secondary cards for Discover/Charts pages"

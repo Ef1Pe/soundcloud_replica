@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoundCloud Replica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div class="promo-banner">
+        <p>Exclusive finds: Unlock tracks and remixes you can't get on any other platform. <a href="#">Try Free</a></p>
+        <button class="banner-close" aria-label="Dismiss banner">&times;</button>
+    </div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="index.html" aria-label="SoundCloud Home"></a>
+            <nav class="primary-nav" aria-label="Primary">
+                <a href="index.html" class="active">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="charts.html">Charts</a>
+                <a href="creators.html">Creators</a>
+                <a href="plans.html">Plans</a>
+                <a href="apps.html">Apps</a>
+            </nav>
+            <div class="header-actions">
+                <button class="ghost-btn" type="button">For Artists</button>
+                <button class="ghost-btn" type="button">Sign in</button>
+                <button class="primary-btn" type="button">Create account</button>
+            </div>
+            <button class="menu-toggle" aria-label="Open navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-card">
+                <div class="hero-content">
+                    <p class="hero-tag">SOUNDCLOUD</p>
+                    <h1>It all starts with an upload.</h1>
+                    <p class="hero-copy">
+                        From bedrooms and broom closets to studios and stadiums, SoundCloud is where you define what's next in music. Just hit upload.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="primary-btn">Upload</button>
+                        <button class="secondary-btn">Explore Artist Pro</button>
+                    </div>
+                    <div class="hero-dots" role="tablist" aria-label="Featured creators">
+                        <button class="dot active" aria-label="Featured artist 1"></button>
+                        <button class="dot" aria-label="Featured artist 2"></button>
+                        <button class="dot" aria-label="Featured artist 3"></button>
+                    </div>
+                </div>
+                <div class="hero-artist">
+                    <div class="artist-chip">
+                        <div>
+                            <p class="artist-name">909Baker</p>
+                            <p class="artist-role">Upcoming Artist</p>
+                        </div>
+                        <button class="ghost-btn small">Follow</button>
+                    </div>
+                    <div class="artist-image" role="img" aria-label="Portrait of featured artist"></div>
+                </div>
+            </div>
+            <div class="utility-bar">
+                <div class="search-group">
+                    <span class="icon-search" aria-hidden="true"></span>
+                    <input type="search" placeholder="Search for artists, bands, tracks, podcasts" aria-label="Search" />
+                </div>
+                <span class="utility-divider" role="presentation"></span>
+                <div class="upload-own">
+                    <span>or</span>
+                    <button class="secondary-btn">Upload your own</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section tight">
+            <header class="section-header">
+                <div>
+                    <p class="section-eyebrow">Hear what's trending for free in the SoundCloud community</p>
+                    <h2>Explore trending playlists</h2>
+                </div>
+                <button class="primary-btn">Explore trending playlists</button>
+            </header>
+            <div class="playlist-grid injection-target" data-injection-target="primary_playlists">
+                <!-- Trending playlists rendered by JS or server injection -->
+            </div>
+        </section>
+
+        <section class="section listen-grid">
+            <article class="card white">
+                <div class="device-stack" aria-hidden="true">
+                    <div class="device device-phone"></div>
+                    <div class="device device-tablet"></div>
+                </div>
+                <div>
+                    <h3>Never stop listening</h3>
+                    <p>SoundCloud is available on Web, iOS, Android, Chromecast, and Xbox One.</p>
+                    <div class="store-badges">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" />
+                    </div>
+                </div>
+            </article>
+            <article class="card dark split">
+                <div>
+                    <p class="section-eyebrow">Calling all creators</p>
+                    <h3>Get on SoundCloud to connect with fans, share your sounds, and grow your audience. What are you waiting for?</h3>
+                    <button class="primary-btn">Find out more</button>
+                </div>
+                <div class="creator-illustration" aria-hidden="true"></div>
+            </article>
+        </section>
+
+        <section class="section join">
+            <h2>Thanks for listening. Now join in.</h2>
+            <p>Save tracks, follow artists and build playlists. All for free.</p>
+            <div class="join-actions">
+                <button class="primary-btn">Create account</button>
+                <button class="ghost-btn">Sign in</button>
+            </div>
+            <p class="existing-account">Already have an account? <a href="#">Sign in</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="#">Directory</a>
+            <a href="#">About us</a>
+            <a href="#">Artist Resources</a>
+            <a href="#">Newsroom</a>
+            <a href="#">Jobs</a>
+            <a href="#">Developers</a>
+            <a href="#">Help</a>
+            <a href="#">Legal</a>
+            <a href="#">Privacy</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Cookie Manager</a>
+            <a href="#">Imprint</a>
+            <a href="#">Charts</a>
+            <a href="#">Transparency</a>
+            <a href="#">Reports</a>
+        </div>
+        <div class="footer-meta">
+            <span>Language: <a href="#">English (US)</a></span>
+        </div>
+    </footer>
+
+    <div class="player-bar" aria-label="Mini player">
+        <div class="player-controls">
+            <button aria-label="Previous track"></button>
+            <button class="play" aria-label="Play"></button>
+            <button aria-label="Next track"></button>
+        </div>
+        <div class="player-timeline">
+            <span class="track-name">City Lights — 909Baker</span>
+            <div class="timeline">
+                <span class="progress" style="width: 38%"></span>
+            </div>
+        </div>
+        <div class="player-actions">
+            <button aria-label="Like"></button>
+            <button aria-label="Add to playlist"></button>
+            <button aria-label="Volume"></button>
+        </div>
+    </div>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
